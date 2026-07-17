@@ -12,12 +12,6 @@ import {
 type ViewMode = "single" | "double" | "double-scroll";
 type Theme = "light" | "dark";
 
-const VIEW_LABEL: Record<ViewMode, string> = {
-  single: "单页连续",
-  double: "双页",
-  "double-scroll": "双页连续",
-};
-
 function ToolBtn({
   label,
   onClick,
@@ -116,6 +110,7 @@ export default function Reader() {
     try {
       const saved = localStorage.getItem("lang") as Lang | null;
       if (saved && LANGS.some((l) => l.code === saved)) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setLang(saved);
         return;
       }
@@ -145,6 +140,7 @@ export default function Reader() {
 
   // 启动时同步 <html> 上的 dark class（layout.tsx 的 bootstrap 已根据系统预设过）
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTheme(document.documentElement.classList.contains("dark") ? "dark" : "light");
   }, []);
 
