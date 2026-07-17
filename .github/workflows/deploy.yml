@@ -1,0 +1,67 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 防止并发部署
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Compute GitHub Pages URLs
+        id: urls
+        env:
+          REPO: ${{ github.event.repository.name }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          if [[ "$REPO" == "$OWNER.github.io" ]]; then
+            # 根域名仓库（username.github.io），basePath 为空
+            echo "base_path=" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://$REPO" >> "$GITHUB_OUTPUT"
+          else
+            # 子路径仓库，basePath 为仓库名
+            echo "base_path=/$REPO" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://$OWNER.github.io/$REPO" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.urls.outputs.base_path }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.urls.outputs.site_url }}
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

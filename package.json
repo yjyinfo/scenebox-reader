@@ -1,7 +1,29 @@
 {
-  "name": "epubreader",
+  "name": "scenebox-reader",
   "version": "0.1.0",
   "private": true,
+  "description": "Privacy-first EPUB reader. 100% client-side, supports single/two-page/continuous views, zoom, print, dark mode, and 5 languages.",
+  "license": "Apache-2.0",
+  "keywords": [
+    "epub",
+    "epub-reader",
+    "ebook",
+    "reader",
+    "nextjs",
+    "react",
+    "client-side",
+    "privacy",
+    "open-source"
+  ],
+  "author": "SceneBox Reader Contributors",
+  "homepage": "https://github.com/yjyinfo/scenebox-reader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yjyinfo/scenebox-reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yjyinfo/scenebox-reader/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +31,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "jszip": "^3.10.1",
     "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
