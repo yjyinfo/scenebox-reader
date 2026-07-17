@@ -6,6 +6,8 @@
 
 Suelta un archivo `.epub` → léelo. Tu archivo nunca sale del navegador.
 
+🌐 **[Demo en vivo](https://yjyinfo.github.io/scenebox-reader/)** — suelta un `.epub` y pruébalo ahora.
+
 📚 **Translations**: [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español (Latinoamérica)](README.es.md)
 
 [Acerca de SceneBox](#-about-scenebox) · [Funciones](#-features) · [Inicio rápido](#-quick-start) · [Atajos de teclado](#-keyboard-shortcuts) · [Stack técnico](#-tech-stack) · [Contribuir](#-contributing) · [Licencia](#-license)

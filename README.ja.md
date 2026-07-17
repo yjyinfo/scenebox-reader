@@ -6,6 +6,8 @@
 
 `.epub`ファイルをドロップ → 読むだけ。ファイルがブラウザから外に出ることはありません。
 
+🌐 **[オンラインデモ](https://yjyinfo.github.io/scenebox-reader/)** — `.epub` をドロップして今すぐ試す。
+
 📚 **Translations**: [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español (Latinoamérica)](README.es.md)
 
 [SceneBoxについて](#-about-scenebox) · [機能](#-features) · [クイックスタート](#-quick-start) · [キーボードショートカット](#-keyboard-shortcuts) · [技術スタック](#-tech-stack) · [コントリビュート](#-contributing) · [ライセンス](#-license)

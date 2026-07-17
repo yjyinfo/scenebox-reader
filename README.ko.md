@@ -6,6 +6,8 @@
 
 `.epub` 파일을 올리면 → 바로 읽을 수 있습니다. 파일은 브라우저를 떠나지 않습니다.
 
+🌐 **[온라인 데모](https://yjyinfo.github.io/scenebox-reader/)** — `.epub` 파일을 올려 지금 바로 체험하세요.
+
 📚 **Translations**: [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español (Latinoamérica)](README.es.md)
 
 [SceneBox 소개](#-scenebox-소개) · [기능](#-기능) · [빠른 시작](#-빠른-시작) · [키보드 단축키](#-키보드-단축키) · [기술 스택](#-기술-스택) · [기여하기](#-기여하기) · [라이선스](#-라이선스)

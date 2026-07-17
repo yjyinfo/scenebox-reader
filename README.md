@@ -6,6 +6,8 @@
 
 Drop an `.epub` file → read it. Your file never leaves the browser.
 
+🌐 **[Live Demo](https://yjyinfo.github.io/scenebox-reader/)** — drop an `.epub` and try it right now.
+
 📚 **Translations**: [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español (Latinoamérica)](README.es.md)
 
 [About SceneBox](#-about-scenebox) · [Features](#-features) · [Quick Start](#-quick-start) · [Keyboard Shortcuts](#-keyboard-shortcuts) · [Tech Stack](#-tech-stack) · [Contributing](#-contributing) · [License](#-license)

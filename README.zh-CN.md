@@ -6,6 +6,8 @@
 
 拖入 `.epub` 文件 → 开始阅读。你的文件永远不会离开浏览器。
 
+🌐 **[在线试用](https://yjyinfo.github.io/scenebox-reader/)** — 拖入 `.epub` 文件立刻体验。
+
 📚 **Translations**: [English](README.md) | [中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español (Latinoamérica)](README.es.md)
 
 [关于 SceneBox](#-关于-scenebox) · [功能特性](#-功能特性) · [快速开始](#-快速开始) · [键盘快捷键](#-键盘快捷键) · [技术栈](#-技术栈) · [参与贡献](#-参与贡献) · [许可证](#-许可证)
